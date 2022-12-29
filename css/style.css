@@ -1,0 +1,207 @@
+@charset "utf-8";
+*{
+  margin: 0;
+  padding: 0;  
+}
+body{
+    /* background-color: #DBE0DA; */
+    background: linear-gradient(45deg, #C48C37 ,#DBE0DA);
+    font-family: 'Light';
+    overflow: hidden;
+}
+/* ====================== header css ====================== */
+.header{
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+.header-title{
+    position: absolute;
+    left: 0;
+    margin: 0px 0px 0px 40px;
+}
+.header-clock{
+    position: absolute;
+    right: 0;
+    margin: 0px 40px 0px 0px;
+}
+.header p{
+    font-size: 30px;
+    font-family: 'Light';
+}
+
+
+/* ====================== wrapper css ====================== */
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    margin: 100px auto 0 auto;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+/* ====================== picture css ====================== */
+.picture{
+    width: 645px;
+    height: 760px;
+    border-radius: 37px;
+    overflow: hidden;
+}
+.picture img{
+    width: 100%;
+    height: 100%;
+    border-radius: 37px;
+}
+
+/* ====================== signIn css ====================== */
+.signIn{
+    background-color: #F3EBDF;
+    width: 466px;
+    height: 539px;
+    margin: 0 250px 0 0;
+    border-radius: 37px;
+    color: #C48C37;
+    /* display: flex;
+    justify-content: center; */
+}
+.signIn .signTitle{
+    text-align: center;
+    padding-top: 50px;
+}
+.signIn .signTitle p{
+    font-size: 40px;
+    font-family: 'Light';
+}
+.signIn .typeText{
+    border: none;
+    border-bottom: 1px solid #C48C37;
+    padding: 6px;
+    outline: none;
+    background-color: #F3EBDF;
+    width: 80%;
+    font-size: 18px;
+}
+.signIn .username p, .pass p{
+    margin: 0 0 0 -290px;
+    font-size: 20px;
+}
+.signIn .divtext{
+    text-align: center;
+    margin: 40px 0;
+}
+.signIn .signInDiv{
+    margin: 0 auto;
+    text-align: center;
+}
+.signIn .loginBtn{
+    width: 80%;
+    height: 55px;
+    font-size: 30px;
+    color: #F3EBDF;
+    background-color: #C48C37;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 4px 6px 10px #777;
+}
+.signIn .loginBtn:active{
+    box-shadow: 6px 4px 20px #555 inset;
+}
+.signIn .signInDiv p{
+    margin: 10px auto;
+}
+.circle{
+    width: 500px;
+    height: 500px;
+    background-color: #C48C37;
+    border-radius: 100vw;
+    position: absolute;
+    z-index: -2;
+}
+.circle1{
+    top: -100px;
+    left: -150px;
+}
+.circle2{
+    top: -100px;
+    right: -150px;
+    background-color: #A95320;
+}
+.circle3{
+    top: 75%;
+    left: 250px;
+    background-color: #A95320;
+}
+/* ====================== signUp css ====================== */
+.signUp{
+    background-color: #C48C37;
+    width: 466px;
+    height: 539px;
+    margin: 0 0 0 250px;
+    border-radius: 37px;
+    color: #F3EBDF;
+}
+.signUp .picture{
+    width: 645px;
+    height: 760px;
+    border-radius: 37px;
+    overflow: hidden;
+}
+.signUp .picture img{
+    width: 100%;
+    height: 100%;
+    border-radius: 37px;
+}
+.signUp .signTitle{
+    text-align: center;
+    padding-top: 50px;
+}
+.signUp .signTitle p{
+    font-size: 40px;
+    font-family: 'Light';
+}
+.signUp .typeText{
+    border: none;
+    border-bottom: 1px solid #F3EBDF;
+    padding: 6px;
+    outline: none;
+    background-color: #C48C37;
+    width: 80%;
+    font-size: 18px;
+}
+.signUp .username p, .pass p{
+    margin: 0 0 0 -290px;
+    font-size: 20px;
+}
+.signUp .divtext{
+    text-align: center;
+    margin: 40px 0;
+}
+.signUp .signUpDiv{
+    margin: 0 auto;
+    text-align: center;
+}
+.signUp .signUpBtn{
+    width: 80%; 
+    height: 55px;
+    font-size: 30px;
+    color: #C48C37;
+    background-color: #F3EBDF;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 4px 6px 10px #777;
+}
+.signUp .signUpBtn:active{
+    box-shadow: 6px 4px 20px #555 inset;
+}
+.signUp .signUpDiv p{
+    margin: 10px auto;
+}
