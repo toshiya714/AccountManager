@@ -17,6 +17,7 @@ function set2fig(num){
 }
 
 function changePage(char){
+    console.log(char);
     if(char == 'login'){
         console.log('login');
         window.location.replace('../html/SignUp.html');
