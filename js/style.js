@@ -1,7 +1,7 @@
 function showClock(){
     var nowTime = new Date();
     var nowYear     = nowTime.getFullYear();
-    var nowMonth    = nowTime.getMonth() + 1;
+    var nowMonth    = nowTime.getMonth() + 2;
     var nowDate     = nowTime.getDate();
     var nowHour = set2fig(nowTime.getHours());
     var nowMin  = set2fig(nowTime.getMinutes());
