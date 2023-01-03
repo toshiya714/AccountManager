@@ -5,7 +5,6 @@
 }
 body{
     /* background-color: #DBE0DA; */
-    background: linear-gradient(45deg, #C48C37 ,#DBE0DA);
     font-family: 'Light';
     overflow: hidden;
 }
@@ -118,6 +117,9 @@ body{
 .signIn .signInDiv p{
     margin: 10px auto;
 }
+.signIn input{
+    color: #C48C37;
+}
 .circle{
     width: 500px;
     height: 500px;
@@ -204,4 +206,84 @@ body{
 }
 .signUp .signUpDiv p{
     margin: 10px auto;
+}
+.signUp input{
+    color: #F3EBDF;
+}
+
+/* ====================== signUp_Complete css ====================== */
+
+.completeDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.completeDiv p{
+    font-size: 50px;
+}
+
+/* ====================== Main css ====================== */
+.circle1-1{
+    background-color: #F3EBDF;
+}
+
+.container .usernameDiv{
+    position: absolute;
+    left: 0;
+    margin: 0 0 0 40px;
+}
+.container .usernameDiv p{
+    font-size: 40px;
+}
+.container .topIcon{
+    position: absolute;
+    top: 180px;
+    left: 0;
+    margin: 0 0 0 90px;
+}
+.container .topIcon button{
+    background-color: #C48C37;
+    width: 150px;
+    height: 50px;
+    border-radius: 100vh;
+    box-shadow: 4px 6px 10px #777;
+    font-size: 18px;
+    color: #F3EBDF;
+}
+.container .searchDiv{
+    display: flex;
+    flex-direction: column;
+}
+.container .searchDiv .lower .underline{
+    width: 700px;
+    border-bottom: #3d3d3d solid 1px;
+}
+.container .searchDiv .upper{
+    display: flex;
+    margin: 0 0 0 auto;
+}
+/* ================= icon css ================= */
+:root {
+	--icon-width: 2px;
+	--icon-color: black;
+}
+.icon-plus {
+	color: var(--icon-color);
+	width: 20px;
+	height: 20px;
+	position: relative;
+}
+.icon-plus:before,
+.icon-plus:after {
+	content: "";
+	position: absolute;
+	top: 12px;
+	width: 20px;
+	height: var(--icon-width);
+	background-color: currentColor;
+}
+.icon-plus:after {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
 }
