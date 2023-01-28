@@ -15,17 +15,21 @@ function set2fig(num){
     }
     return num;
 }
+setInterval('showClock()', 1000);
+
 
 function changePage(char){
-    console.log(char);
-    if(char == 'login'){
-        console.log('login');
-        window.location.replace('../html/SignUp.html');
+    var alink;
+    if(char == "signup"){
+        alink = document.getElementById("signinId");
+        alink.classList.toggle("displayNone");
+        alink = document.getElementById("loginId");
+        alink.classList.toggle("displayNone");
     }
-    else{
-        console.log('signUp');
-        window.location.replace('../html/SignIn.html');
+    else if(char == "signin"){
+        alink = document.getElementById("loginId");
+        alink.classList.toggle("displayNone");
+        alink = document.getElementById("signinId");
+        alink.classList.toggle("displayNone");
     }
 }
-
-setInterval('showClock()', 1000);
