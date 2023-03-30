@@ -16,20 +16,3 @@ function set2fig(num){
     return num;
 }
 setInterval('showClock()', 1000);
-
-
-function changePage(char){
-    var alink;
-    if(char == "signup"){
-        alink = document.getElementById("signinId");
-        alink.classList.toggle("displayNone");
-        alink = document.getElementById("loginId");
-        alink.classList.toggle("displayNone");
-    }
-    else if(char == "signin"){
-        alink = document.getElementById("loginId");
-        alink.classList.toggle("displayNone");
-        alink = document.getElementById("signinId");
-        alink.classList.toggle("displayNone");
-    }
-}

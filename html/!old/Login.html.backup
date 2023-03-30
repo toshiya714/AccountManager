@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body style="background: linear-gradient(45deg, #C48C37 ,#DBE0DA);">
     <div class="header">
         <div class="header-title">
             <p>Account Manager</p>
@@ -17,12 +17,13 @@
             <p id="RealTime"></p>
         </div>
     </div>
-    <!-- <div class="circle circle1"></div>
-    <div class="circle circle2"></div>
-    <div class="circle circle3"></div> -->
     <div class="wrapper">
-        <div class="container" id="container" style="overflow: hidden;">
-            <div id="signinId" class="form-container sign-in-container">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+        <div class="container">
+
+            <div id="signinId" class="signInScreen displayOn">
                 <form action="###" method="post">
                     <div class="signIn">
                         <div class="signTitle"><p>Sign In</p></div>
@@ -36,12 +37,20 @@
                         </div>
                         <div class="signInDiv">
                             <button class="loginBtn">Log In</button>
+                            <p>or</p>
+                            <a href="###" onclick="changePage('signup')">Sign Up</a>
                         </div>
                     </div>
                 </form>
+                <div class="picture" id="picSignIn">
+                    <img src="../img/useSignIn.jpg" class="signImg">
+                </div>
             </div>
 
-            <div id="loginId" class="form-container sign-up-container">
+            <div id="loginId" class="signUpScreen displayNone">
+                <div class="picture" id="picSignUp">
+                    <img src="../img/useSignUp.jpg" class="logImg">
+                </div>
                 <form action="###" method="post">
                     <div class="signUp">
                         <div class="signTitle"><p>Sign Up</p></div>
@@ -55,28 +64,16 @@
                         </div>
                         <div class="signUpDiv">
                             <button class="signUpBtn">Sign Up</button>
+                            <p>or</p>
+                            <a href="###" onclick="changePage('signin')">Sign in</a>
                         </div>
                     </div>
                 </form>
             </div>
 
-            <div class="overlay-container">
-                <div class="overlay">
-                    <div class="overlay-panel overlay-left">
-                        <h1>Welcome Back!</h1>
-                        <p>To keep connected with us please login with your personal info</p>
-                        <button class="ghost" id="signIn">Sign In</button>
-                    </div>
-                    <div class="overlay-panel overlay-right">
-                        <h1>Hello, Friend!</h1>
-                        <p>Enter your personal details and start journey with us</p>
-                        <button class="ghost" id="signUp">Sign Up</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
-    <script src="../js/clock.js"></script>
-    <script src="../js/login_slide.js"></script>
+
+    <script src="../js/style.js"></script>
 </body>
 </html>
