@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
-<body style="background: linear-gradient(45deg, #C48C37, #DBE0DA);">
+<!-- <body style="background: linear-gradient(45deg, #C48C37, #DBE0DA);"> -->
+<body>
     <div class="header">
         <div class="header-title">
             <p>Account Manager</p>
@@ -18,29 +20,25 @@
         </div>
     </div>
     <div class="wrapper">
-        <!-- <div class="circle circle1 circle1-1"></div>
-        <div class="circle circle5"></div>
-        <div class="circle circle6"></div>
-        <div class="circle circle7"></div> -->
         <div class="container">
-            <div class="usernameDiv">
-                <p>Hello xxxx</p>
-            </div>
-            <div class="topIcon">
-                <button>Top page</button>
-            </div>
             <div class="searchDiv">
-                <div class="upper">
-                    <button>Search</button>
-                    <i class="icon-plus"></i>
-                </div>
-                <div class="lower">
-                    <div class="underline"></div>
-                </div>
+                <input type="search" class="input-search" name="searchText" id="search-input" placeholder="Platform">
+                <button class="searchIcon"></button>
+            </div>
+            <div class="addAccount">
+                <button>Add Account</button>
             </div>
         </div>
+        <div class="cardArea">
+            <!-- <div class="card-item" onclick="flagClass(this)">
+                <div class="card-front"></div>
+                <div class="card-back"></div>
+            </div> -->
+        </div>
+        
     </div>
 
     <script src="../js/style.js"></script>
+    <script src="../js/createCard.js"></script>
 </body>
 </html>

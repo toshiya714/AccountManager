@@ -1,12 +1,18 @@
 @charset "utf-8";
 *{
   margin: 0;
-  padding: 0;  
+  padding: 0;
+  transition: .5s;
 }
 body{
     /* background-color: #DBE0DA; */
     font-family: 'Light';
     overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/backgroundImg.jpg);
+    background-size: cover;
+    background-position: center;
 }
 /* ====================== header css ====================== */
 .header{
@@ -224,66 +230,97 @@ body{
 }
 
 /* ====================== Main css ====================== */
-.circle1-1{
-    background-color: #F3EBDF;
+.container .searchDiv button{
+    background-color: #C48C37;
+    width: 30px;
+    height: 30px;
+    border-radius: 100vh;
+    box-shadow: 4px 6px 10px #777;
+    font-size: 14px;
+    color: #F3EBDF;
+    transition: all 0.2s;
+    margin: 0 0 0 10px;
 }
 
-.container .usernameDiv{
+.container .addAccount{
     position: absolute;
-    left: 0;
-    margin: 0 0 0 40px;
+    bottom: 10%;
+    right: 10%;
 }
-.container .usernameDiv p{
-    font-size: 40px;
-}
-.container .topIcon{
-    position: absolute;
-    top: 180px;
-    left: 0;
-    margin: 0 0 0 90px;
-}
-.container .topIcon button{
-    background-color: #C48C37;
+.container .addAccount button{
+    background-color: #F3EBDF;
     width: 150px;
-    height: 50px;
+    height: 45px;
     border-radius: 100vh;
     box-shadow: 4px 6px 10px #777;
     font-size: 18px;
-    color: #F3EBDF;
+    color: #C48C37;
+    transition: all 0.2s;
+}
+button:active{
+    transform: translate(0, 2px);
 }
 .container .searchDiv{
+    position: absolute;
+    right: 10%;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    width: 400px;
 }
-.container .searchDiv .lower .underline{
-    width: 700px;
-    border-bottom: #3d3d3d solid 1px;
+.container .searchDiv .input-search{
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid black;
+    padding: 0 0 2px 1rem;
+    font-size: 18px;
 }
-.container .searchDiv .upper{
+.searchIcon:before{
+    font-family: "Font Awesome 5 Free";
+    content: '\f002';
+    font-weight: 900;
+}
+.wrapper .cardArea{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
-    margin: 0 0 0 auto;
+    /* justify-content: start; */
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    overflow-x: scroll;
 }
-/* ================= icon css ================= */
-:root {
-	--icon-width: 2px;
-	--icon-color: black;
+/* .wrapper .cardArea::-webkit-scrollbar-track{
+    background: yellow;
+} */
+.card-item{
+    /* width: 270px; */
+    position: relative;
+    margin: 0 20px;
+    transform-style: preserve-3d;
+    perspective: 600px;
 }
-.icon-plus {
-	color: var(--icon-color);
-	width: 20px;
-	height: 20px;
-	position: relative;
+.card-front, .card-back{
+    width: 270px;
+    height: 350px;
+    border-radius: 10px;
 }
-.icon-plus:before,
-.icon-plus:after {
-	content: "";
-	position: absolute;
-	top: 12px;
-	width: 20px;
-	height: var(--icon-width);
-	background-color: currentColor;
+.card-front{
+    background-color: red;
 }
-.icon-plus:after {
-	-webkit-transform: rotate(90deg);
-	transform: rotate(90deg);
+.card-back{
+    position: absolute;
+    background-color: blue;
+    top: 0;
+    left: 0;
+
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+}
+.card-item.flipped .card-front{
+    transform: rotateY(180deg);    
+}
+.card-item.flipped .card-back{
+    transform: rotateY(0);    
 }

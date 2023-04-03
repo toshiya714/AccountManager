@@ -28,4 +28,9 @@ function changePage(char){
     }
 }
 
+function flagClass(card){
+    // var card = document.querySelector('.card-item')
+    card.classList.toggle('flipped');
+}
+
 setInterval('showClock()', 1000);
