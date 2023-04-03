@@ -2,24 +2,17 @@
 *{
   margin: 0;
   padding: 0;  
-  transition: .5s;
 }
 body{
-    /* background-color: #DBE0DA; */
-    /* font-family: 'Light';
-    overflow: hidden; */
     font-family: 'Light';
-    overflow: hidden;
-    background-image: url(../img/backgroundImg.jpg);
-    background-size: cover;
-    background-position: center;
+    /* overflow: hidden; */
 }
 form{
     height: 100%;
 }
 /* ====================== header css ====================== */
 .header{
-    background-color: #203d5fc7;
+    background-color: #fff;
     width: 100%;
     height: 100px;
     position: absolute;
@@ -27,7 +20,6 @@ form{
     left: 0;
     display: flex;
     align-items: center;
-    color: #fff;
 }
 .header-title{
     position: absolute;
@@ -60,6 +52,7 @@ form{
     max-width: 100%;
     min-height: 539px;
     border-radius: 10px;
+    overflow: hidden;
 }
 .form-container{
     position: absolute;
@@ -278,124 +271,26 @@ button{
     letter-spacing: 0.5px;
     margin: 20px 0 30px;
 }
-/* ====================== signUp_Complete css ====================== */
 
-.completeDiv{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 200px;
-}
-
-.completeDiv p{
-    font-size: 50px;
-    color: #fff;
-}
-
-/* ====================== Main css ====================== */
-.main-wrapper{
-    width: 100%;
-    height: 100vh;
-    margin: 100px auto 0 auto;
-}
-.main-container{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 150px;
-}
-.main-container .searchDiv button{
-    background-color: #C48C37;
-    width: 30px;
-    height: 30px;
-    border-radius: 100vh;
-    box-shadow: 4px 6px 10px #777;
-    font-size: 14px;
-    color: #F3EBDF;
-    transition: all 0.2s;
-    margin: 0 0 0 10px;
-}
-
-.main-container .addAccount{
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-}
-.main-container .addAccount button{
-    background-color: #F3EBDF;
-    width: 150px;
-    height: 45px;
-    border-radius: 100vh;
-    box-shadow: 4px 6px 10px #777;
-    font-size: 18px;
-    color: #C48C37;
-    transition: all 0.2s;
-}
-button:active{
-    transform: translate(0, 2px);
-}
-.main-container .searchDiv{
-    position: absolute;
-    right: 10%;
-    display: flex;
-    /* flex-direction: column; */
-    width: 400px;
-}
-.main-container .searchDiv .input-search{
-    width: 100%;
-    text-align: left;
-    border-bottom: 1px solid black;
-    padding: 0 0 2px 1rem;
-    font-size: 18px;
-}
-.searchIcon:before{
-    font-family: "Font Awesome 5 Free";
-    content: '\f002';
-    font-weight: 900;
-}
-.main-wrapper .cardArea{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    /* justify-content: start; */
-    align-items: center;
-    width: 100%;
+.circle{
+    width: 500px;
     height: 500px;
-    overflow-x: scroll;
-}
-/* .main-wrapper .cardArea::-webkit-scrollbar-track{
-    background: yellow;
-} */
-.card-item{
-    /* width: 270px; */
-    position: relative;
-    margin: 0 20px;
-    transform-style: preserve-3d;
-    perspective: 600px;
-}
-.card-front, .card-back{
-    width: 270px;
-    height: 350px;
-    border-radius: 10px;
-}
-.card-front{
-    background-color: red;
-}
-.card-back{
+    background-color: #C48C37;
+    border-radius: 100vw;
     position: absolute;
-    background-color: blue;
-    top: 0;
-    left: 0;
-
-    transform: rotateY(-180deg);
-    backface-visibility: hidden;
+    z-index: -2;
 }
-.card-item.flipped .card-front{
-    transform: rotateY(180deg);    
+.circle1{
+    top: -100px;
+    left: -150px;
 }
-.card-item.flipped .card-back{
-    transform: rotateY(0);    
+.circle2{
+    top: -100px;
+    right: -150px;
+    background-color: #A95320;
+}
+.circle3{
+    top: 75%;
+    left: 250px;
+    background-color: #A95320;
 }

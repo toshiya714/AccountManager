@@ -1,3 +1,3 @@
 setTimeout(function(){
-    window.location.href = '../html/SignIn.html';
+    window.location.href = '../html/Login.html';
   }, 3*1000);
