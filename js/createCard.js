@@ -1,6 +1,6 @@
 const cardArea = document.querySelector(".cardArea");
 
-for (i = 0; i < 10; i++){
+for (i = 0; i < 5; i++){
     const cardItem = document.createElement("div");
     const cardFront = document.createElement("div");
     const cardBack = document.createElement("div");
