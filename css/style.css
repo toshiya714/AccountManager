@@ -408,3 +408,19 @@ button:active{
 .card-item.flipped .card-back{
     transform: rotateY(0);    
 }
+.card-front, .card-back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-size: 18px;
+    color: #F3EBDF;
+    text-align: center;
+}
+.labels{
+    font-size: 14px;
+}
+.card-front div, .card-back div{
+    margin: 10px auto;
+}
